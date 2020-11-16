@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>NewToSalzburg?</title>
+		
+		<!--link to stylesheet-->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- link to leaflet stylesheet-->
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/leaflet-sidebar.css">
+        <link href= "css/fontawesome/all.min.css" rel="stylesheet">
+		<!-- link to leaflet javascript library-->
+		<script src="js/leaflet-src.js"></script>
+		<script src="js/leaflet-sidebar.js"></script>
+		<!--link to the file that contains geoJson data-->
+		<script src="data/cafe.js" type="text/javascript"></script>
+		<script src="data/amenity_university.js" type="text/javascript"></script>
+		<script src="data/sport_polygon.js" type="text/javascript"></script>
+		<script src="data/sport_points.js" type="text/javascript"></script>
+						
+	</head>
+	<body>
+		<!--the sequence of elements called matters!-->
+        <div id="sidebar" class= "leaflet-sidebar collapsed">
+            <!-- Navigation tabs-->
+            <div class = "leaflet-sidebar-tabs">
+                <!-- Top aligned tabs -->
+                <ul role="tablist">
+                    <li><a href="#home" role="tab"><i class="fa fa-home"></i></a></li>
+                    <li><a href="#autopan" role="tab"><i class="fa fa-hand-point-up"></i></a></li>
+                </ul>
+            </div>
+            <!-- panel content -->
+            <div class="leaflet-sidebar-content">
+                <div class="leaflet-sidebar-pane" id="home">
+                    <h1 class="leaflet-sidebar-header">
+                        An introduction to new Salzburg students
+                        <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+                    </h1>
+                    
+                    <h2 class="headings">Map purpose</h2>
+                    <p class="text">The idea of this map is to provide students that are new in Salzburg with 
+                        an interactive map where they can locate Cafés, Sport facilities and University 
+                        amenities.</p>
+                    <p class="text">The following tab on the left provides an overview over the interactivity included
+                        in the map.</p>
+                </div>
+
+                <div class="leaflet-sidebar-pane" id="autopan">
+                    <h1 class="leaflet-sidebar-header">
+                        Interactivity
+                        <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+                    </h1>
+                    <ol type="1">
+                        <li class="headings"><b>Get to know Cafés in Salzburg</b></li>
+                        <p class="text">The first interactive feature concerns the Cafés. By a simple click, 
+                            the respective Café will greet the user including its name.
+                        </p>
+                        <li class="headings"><b>Highlighting features</b></li>
+                        <p class="text">To draw attention to the users pointer, the map features represented
+                            by a polygon (Sport areas & University amenities) are highlighted 
+                            when hovering over them with the mouse.
+                        </p>
+                        <li class="headings"><b>Tooltips, Popups and Zoom-In</b></li>
+                        <p class="text">To facilitate the understanding of what the map features represent, 
+                            hovering over them provides a short description of what can be found 
+                            there. Clicking the features will open a box including more detailed information
+                            regarding what type of sport can be exercised here or what building of the 
+                            University Salzburg is at a certain location.
+                        </p>
+                        <p class="text">For polygon features, a zoom-in function is included. Right-clicking on
+                            the respective object triggers a smooth zooming towards a close-up of 
+                            the feature.
+                        </p>
+                    </ol>
+                </div>
+
+                <div class="leaflet-sidebar-pane" id="messages">
+                    <h1 class="leaflet-sidebar-header">Messages<span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+                </div>
+            </div>
+
+        </div>
+
+		<div id="map"></div>
+
+        <!-- link to main javascript file -->
+		<script src="js/mywebmap.js"></script>
+		
+	</body>
+<html>
