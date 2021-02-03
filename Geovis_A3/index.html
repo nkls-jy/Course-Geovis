@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Silk Road</title>
+		
+		<!--link to stylesheet-->
+		<link rel="stylesheet" href="css/style_sidebar.css">
+		<!-- link to leaflet stylesheet-->
+        <link rel="stylesheet" href="css/leaflet.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<!-- link to leaflet javascript library-->
+		<script src="js/leaflet-src.js"></script>
+		<script src="js/L.Polyline.SnakeAnim.js"></script>
+		<!--link to the file that contains geoJson data-->
+		<script src="data/marroute.js" type="text/javascript"></script>
+		<script src="data/lroute.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<input type="checkbox" id="check">
+		<label for="check">
+		  <i class="fas fa-bars" id="btn"></i>
+		  <i class="fas fa-times" id="cancel"></i>
+		</label>
+		<div class="sidebar">
+			<header>The Silk Road</header>
+			<ul>
+				<li><a href="#" onclick="snake_hist()"><i class="fas fa-landmark"></i>Historic Road</a></li>
+				<li><a href="#" onclick="snake_land()"><i class="fas fa-link"></i>The Economic Belt</a></li>
+				<li><a href="#" onclick="snake_sea()"><i class="fas fa-ship"></i>The Maritime Silk Road</a></li>
+			</ul>
+		</div>
+		<section id="map"></section>
+		<script src="js/main.js"></script>
+	
+<!--
+		<div id="head"><h1>The Old and New Silk Road</h1></div>
+		<div id="buttons">
+			<table>
+				<tr>
+					<th><button onclick='snake_hist()'>Historic Journey</button></th>
+					<th><button onclick='snake_sea()'>Maritime Silk Road</button></th>
+					<th><button onclick='snake_land()'>Economic Belt</button></th>
+				</tr>
+			</table>
+		</div>
+		<div id="map"></div>
+		link to main javascript file
+
+		<div>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+	-->
+	</body>
+<html>

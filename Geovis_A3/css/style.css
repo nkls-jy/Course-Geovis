@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#head {
+	height: 10vh;
+	width: 100%;
+	font-size: 20pt;
+	background-color: bisque;
+	vertical-align: middle;
+	text-align: center;
+}
+
+h1 {
+	color: rgb(57, 58, 59);
+}
+
+#buttons {
+	background-color: lightgray;
+	text-align: justify;
+}
+
+table {
+	width: 100%;
+}
+
+button {
+	font-weight: bold;
+	font-size: 16pt;
+}
+
+#map{
+	height: 100%;
+	width: 100%;
+}
